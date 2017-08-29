@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import numpy as np
 
 
 def evaluation_train(x, y, batch_size, train_fn, epoch):

@@ -14,7 +14,7 @@ def mnist_data():
         with gzip.open(filename, 'rb') as f:
             data = np.frombuffer(f.read(), np.uint8, offset=16)
         data = data.reshape(-1, 1, 28, 28)
-        return data / np.float32(255)
+        return data / np.float32(256)
 
     def load_mnist_labels(filename):
         with gzip.open(filename, 'rb') as f:
