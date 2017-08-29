@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
-#wget https://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz
-#wget https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz
+wget  -P ../data/ https://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz
+wget  -P ../data/ https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz
+tar -xvzf ../data/cifar-100-python.tar.gz
+
 
 # MNIST
 wget -P ../data/ http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz
